@@ -6,8 +6,12 @@ from tower_cli.conf import settings
 
 class AnsibleTowerAction(Action):
 
-    def __init__(self, config):
-        super(AnsibleTowerAction, self).__init__(config)
+ #   def __init__(self, config):
+ #       super(AnsibleTowerAction, self).__init__(config)
+    
+    def __init__(self, config=None, action_service=None):
+        super(BaseAction, self).__init__(config, action_service)
+        self.client = self._get_client()
 
     def _get_client(self):
         hostname = self.config['hostname']
