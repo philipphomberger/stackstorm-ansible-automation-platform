@@ -7,8 +7,8 @@ from tower_cli.conf import settings
 class AnsibleTowerAction(Action):
 
     def __init__(self, config):
-        super(AnsibleTowerAction, self).__init__(config)
-
+        super(AnsibleTowerAction, self).__init__(config=config)
+       
     def _get_client(self):
         hostname = self.config['hostname']
         username = self.config['username']
