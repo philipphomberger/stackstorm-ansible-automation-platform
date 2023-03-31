@@ -10,7 +10,7 @@ passwort:
   type: "string"
   required: true
   secret: true
-passwort:
+host:
   description: >-
     Url to Ansible Instance.
   type: "string"
