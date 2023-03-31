@@ -1,1 +1,20 @@
-
+---
+username:
+  description: "The Username for ansible."
+  type: "string"
+  secret: true
+  required: true
+  default: "test"
+passwort:
+  description: >-
+    Passwort of Ansible User.
+  type: "string"
+  required: true
+  secret: true
+  default: "test"
+hostname:
+  description: >-
+    Url to Ansible Instance.
+  type: "string"
+  required: true
+  test: "test.sys.schwarz"
