@@ -1,0 +1,17 @@
+---
+username:
+  description: "The Username for ansible."
+  type: "string"
+  secret: true
+  required: true
+passwort:
+  description: >-
+    Passwort of Ansible User.
+  type: "string"
+  required: true
+  secret: true
+passwort:
+  description: >-
+    Url to Ansible Instance.
+  type: "string"
+  required: false
