@@ -14,4 +14,4 @@ hostname:
   description: >-
     Url to Ansible Instance.
   type: "string"
-  required: false
+  required: true
